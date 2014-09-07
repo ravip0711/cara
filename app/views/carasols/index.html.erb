@@ -1,0 +1,13 @@
+<h1>Listing carasols</h1>
+
+
+    <div id="owl-demo">
+    <% @carasols.each do |carasol| %>
+
+            <div class="item"><img src="<%= carasol.image.to_s %>"></div>
+
+
+    <% end %>
+    </div>
+<br>
+

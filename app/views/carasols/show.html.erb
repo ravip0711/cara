@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @carasol.name %>
+</p>
+
+<p>
+  <strong>Photo:</strong>
+  <%= image_tag @carasol.image if @carasol.image? %>
+</p>
+
+<%= link_to 'Edit', edit_carasol_path(@carasol) %> |
+<%= link_to 'Back', carasols_path %>
